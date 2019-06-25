@@ -5,8 +5,8 @@
 
 ### 참고 사이트
 * [SW 
-expert]([https://swexpertacademy.com/main/main.do](https://swexpertacademy.com/main/main.do))
-* [Baekjoon]([https://www.acmicpc.net/](https://www.acmicpc.net/))
+expert](https://swexpertacademy.com/main/main.do)
+* [Baekjoon](https://www.acmicpc.net/)
 
 
 |  주|  문제 1|문제 2|문제 3|
