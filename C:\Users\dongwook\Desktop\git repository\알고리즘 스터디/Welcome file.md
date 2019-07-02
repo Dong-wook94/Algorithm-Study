@@ -22,16 +22,20 @@ int search_treasure(int i_pos, int t_pos) {
 	if (level_gap <= index_gap) {
 		time = index_gap;
 		if (source.index > destination.index)//예외
-					time += (destination.level - source.level);
+			time += (destination.level - source.level);
 	}
 	else {
 		time = level_gap;
-		if (source.index > destination.index)
+		if (source.index > destination.index)//예외
 			time += (source.index - destination.index);
 	}
 	return time;
 }
 ~~~
+
+최초 접근은 BFS를 통한 탐색을 시도하였으나 시간과 메모리를 많이 소모하게 되어 알고리즘을 변경하여 풀었다.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDEzODU5OTZdfQ==
+eyJoaXN0b3J5IjpbMTE4NjU4MTg0M119
 -->
