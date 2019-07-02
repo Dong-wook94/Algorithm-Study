@@ -9,7 +9,7 @@
 int search_treasure(int i_pos, int t_pos) {
 	int time;
 	int level_gap, index_gap;
-	if (i_pos < t_pos) { //높은곳을 시작지점으로 잡기위ㄹ
+	if (i_pos < t_pos) { //상대적으로 높은곳을 시작지점으로 잡기위예
 		source = get_pos(i_pos);
 		destination = get_pos(t_pos);
 	}
@@ -19,15 +19,19 @@ int search_treasure(int i_pos, int t_pos) {
 	}
 	level_gap = destination.level - source.level;
 	index_gap = abs(source.index - destination.index);
-	if (level_gap <= index_gap) { //레벨차이<=index차이
-			time = index_gap;
+	if (level_gap <= index_gap) {
+		time = index_gap;
+		if (source.index > destination.index)//예외
+					time += (destination.level - source.level);
 	}
 	else {
 		time = level_gap;
+		if (source.index > destination.index)
+			time += (source.index - destination.index);
 	}
 	return time;
 }
 ~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQwNzgyNTBdfQ==
+eyJoaXN0b3J5IjpbLTIxNDEzODU5OTZdfQ==
 -->
