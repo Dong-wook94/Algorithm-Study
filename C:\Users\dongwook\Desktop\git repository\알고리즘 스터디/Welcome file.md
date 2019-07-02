@@ -5,11 +5,11 @@
 
 각지점을 level 과 index를 통해 표현하여 **level이 index 보다 큰경우 작은경우** 그리고 이로 확인할수 없는 범위인 경우를 **추가적으로 고려**하여야 했다.
 
-~~~c
+~~~ c
 int search_treasure(int i_pos, int t_pos) {
 	int time;
 	int level_gap, index_gap;
-	if (i_pos < t_pos) {
+	if (i_pos < t_pos) { //높은곳을 시작지점으로 잡기위ㄹ
 		source = get_pos(i_pos);
 		destination = get_pos(t_pos);
 	}
@@ -19,8 +19,8 @@ int search_treasure(int i_pos, int t_pos) {
 	}
 	level_gap = destination.level - source.level;
 	index_gap = abs(source.index - destination.index);
-	if (level_gap <= index_gap) {
-		time = index_gap;
+	if (level_gap <= index_gap) { //레벨차이<=index차이
+			time = index_gap;
 	}
 	else {
 		time = level_gap;
@@ -29,5 +29,5 @@ int search_treasure(int i_pos, int t_pos) {
 }
 ~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MTExNjY1M119
+eyJoaXN0b3J5IjpbLTE0NDQwNzgyNTBdfQ==
 -->
