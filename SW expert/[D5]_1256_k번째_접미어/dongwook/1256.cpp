@@ -24,6 +24,11 @@ void FindSubString(int t) {
 	scanf("%s", String);
 	arr.push_back(sub.assign(String));
 
+	if (idx > arr[0].length()) {
+		printf("#%d none\n", t);
+		arr.clear();
+		return;
+	}
 	for (int i = 1; i < arr[0].length(); i++) {
 		sub = arr[0].substr(i, arr[0].length() - 1);
 		arr.push_back(sub);
