@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\floid\onedrive\desktop\workspace\knu-algorithm-study\sw expert\[d5]_4112_이상한 피라미드 탐험\seowonanswer\seowonanswer\main.cpp(22): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\floid\onedrive\desktop\workspace\knu-algorithm-study\sw expert\[d5]_4112_이상한 피라미드 탐험\seowonanswer\seowonanswer\main.cpp(24): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SeowonAnswer.vcxproj -> C:\Users\floid\OneDrive\Desktop\workspace\KNU-Algorithm-Study\SW expert\[D5]_4112_이상한 피라미드 탐험\SeowonAnswer\Debug\SeowonAnswer.exe

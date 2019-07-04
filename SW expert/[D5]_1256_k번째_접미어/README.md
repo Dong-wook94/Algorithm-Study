@@ -2,7 +2,7 @@
 
 ## 문제 링크
 
-<https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18KWf6ItECFAZN&categoryId=AV18KWf6ItECFAZN&categoryType=CODE>
+<https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18GHd6IskCFAZN>
 
 ## 알고리즘 종류
 * 문자열
