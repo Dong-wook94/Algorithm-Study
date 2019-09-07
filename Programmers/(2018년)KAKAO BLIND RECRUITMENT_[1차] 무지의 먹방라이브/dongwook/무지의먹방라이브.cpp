@@ -38,7 +38,7 @@ int solution(vector<int> food_times, long long k) {
 	sort(ft.begin(), ft.end(), cmp_t);
 	int accumulate = 0;
 	for (int i = 0,n=ft.size();i<ft.size();i++,n--) {
-		long long spend = (ft[i].times - accumulate)*n;
+		long long spend = (long long)(ft[i].times - accumulate)*n;
 		
 		if (spend == 0) {
 			//ft.erase(ft.begin());
