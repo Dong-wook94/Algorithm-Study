@@ -52,8 +52,8 @@ vector<string> string_tokenize(string str, string delimiter) {
 
 
 int main() {
-	string a = "°¡,³ª,´Ù,¶ó,¸¶";
-	string b = "°¡ ³ª ´Ù ¶ó ¸¶";
+	string a = "ê°€,ë‚˜,ë‹¤,ë¼,ë§ˆ";
+	string b = "ê°€ ë‚˜ ë‹¤ ë¼ ë§ˆ";
 	vector<string> name = string_tokenize(a, ",");
 	for (int i = 0; i < name.size(); i++) {
 		cout << name[i] << endl;
