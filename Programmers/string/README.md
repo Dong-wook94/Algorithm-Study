@@ -1,26 +1,13 @@
-# C++ ���ֻ���ҰŰ��� ���� function
-~~~
-vector<string> string_tokenize(string str, string delimiter) {
-	vector<string> token;
-	vector<int> del_pos;
-	//token.push_back(str.substr(0, str.find(" ")));
-	del_pos.push_back(0);
-	for (int i = 0; i < str.size(); i++) {
-		if (str.find(delimiter, i) != std::string::npos) {
-			int index = str.find(delimiter, i);
-			del_pos.push_back(index+1);
-			i = index + 1;
-		}
-		else {
-			del_pos.push_back(str.size()+1);
-			break;
-		}
-			
-	}
-	for (int i = 0; i < del_pos.size()-1; i++) {
-		token.push_back(str.substr(del_pos[i], del_pos[i + 1] - 
-del_pos[i]-1));
-	}
-	return token;
-}
-~~~
+# 자주 사용할거같은 function 구현 및 참고
+
+* [1학기 알고리즘 준비 repo](https://github.com/Dong-wook94/Algorithm-Study)
+
+* [vector 사용법](https://blockdmask.tistory.com/70)
+
+* [string 클래스 사용법](https://blockdmask.tistory.com/338)
+
+* [조합 사용법 예시-치킨배달](https://github.com/Dong-wook94/Algorithm-Study/tree/master/%EB%B0%B1%EC%A4%80/%EB%B8%8C%EB%A3%A8%ED%8A%B8%ED%8F%AC%EC%8A%A4/%EC%B9%98%ED%82%A8%EB%B0%B0%EB%8B%AC)
+
+
+
+
